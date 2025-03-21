@@ -22,7 +22,7 @@ def getVideoRecords(response: requests.models.Response) -> list:
 def getVideoIDs():
     """Fetches video IDs and titles from FreeCodeCamp's YouTube channel."""
     api_key = os.getenv('YT_API_KEY')
-    channel_id = 'UCa9gErQ9AE5jT2DZLjXBIdA'  # FreeCodeCamp channel: UC8butISFwT-Wl7EV0hUK0BQ , shaws's: UCa9gErQ9AE5jT2DZLjXBIdA
+    channel_id = 'UC8butISFwT-Wl7EV0hUK0BQ'  # FreeCodeCamp channel: UC8butISFwT-Wl7EV0hUK0BQ , shaws's: UCa9gErQ9AE5jT2DZLjXBIdA
     base_url = 'https://www.googleapis.com/youtube/v3/playlistItems'
 
     # Get Uploads Playlist ID
