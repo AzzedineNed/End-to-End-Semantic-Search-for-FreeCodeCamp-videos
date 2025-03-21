@@ -1,0 +1,6 @@
+fastapi
+polars
+sentence-transformers
+scikit-learn
+numpy==1.26.4
+uvicorn
