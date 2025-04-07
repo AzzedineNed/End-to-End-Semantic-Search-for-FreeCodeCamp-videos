@@ -1,4 +1,7 @@
 ---
+
+```markdown
+---
 # 🎯 End-to-End Semantic Search for freeCodeCamp Videos
 
 Semantic search system to explore freeCodeCamp YouTube content using vector similarity and sentence embeddings. Built for educational search via natural language queries.
@@ -61,30 +64,46 @@ azzedinened-end-to-end-semantic-search-for-freecodecamp-videos/
 
 Automated via GitHub Actions:
 
-- ⏰ Runs every **Saturday at 4:00 AM** or on manual trigger.
-- 📥 Fetches latest videos using YouTube API v3.
+- ⏰ Runs every **Saturday at 4:00 AM** or manually on-demand.
+- 📥 Fetches latest videos using the YouTube API v3.
 - 🧹 Cleans and transforms video metadata.
 - 🧠 Embeds using `sentence-transformers`.
-- 💾 Saves processed `.parquet` files to `app/data/`.
+- 💾 Saves `.parquet` files to `app/data/`.
+
+> Note: Only the `app/` directory is included in the final Docker image.
+
+---
+
+## 🔐 Secrets & Configuration
+
+To securely run the data pipeline via GitHub Actions, set the following repository secrets:
+
+| Secret Name       | Description                                           |
+|-------------------|-------------------------------------------------------|
+| `YOUTUBE_API_KEY` | YouTube Data API v3 key from your Google Console     |
+| `GH_PAT`          | GitHub Personal Access Token (for workflow commits)  |
+
+- 🔒 Secrets keep credentials out of source code.
+- ✅ Ensures smooth, authenticated pipeline execution.
+
+➡️ **Setup via:** GitHub → `Settings` → `Secrets and variables` → `Actions`
 
 ---
 
 ## 🚀 Deployment
 
-- **Backend:** FastAPI app in Docker.
+- **Backend:** FastAPI app containerized with Docker.
 - **Port:** `8080`
-- **Hosting:** Google Cloud Run with Cloud Build CI/CD.
-- **Trigger:** Any push to the repo (including data pipeline updates).
-
-> The Docker container only includes the `app/` directory.
+- **Hosted on:** Google Cloud Run.
+- **CI/CD:** Google Cloud Build + GitHub Actions trigger deployments on push.
 
 ---
 
 ## 🌐 Interface
 
-- Built with [Gradio](https://gradio.app/).
+- Built using [Gradio](https://gradio.app/).
 - Hosted on [Hugging Face Spaces](https://huggingface.co/spaces/Azzedine01/End-to-End-Semantic-Search-for-FreeCodeCamp-videos).
-- Access is secured via an **Identity Token**.
+- Secured with an **Identity Token** for controlled access.
 
 ---
 
@@ -124,7 +143,7 @@ python Data_Pipeline.py
 
 ## 🧪 Test the API
 
-Once the app is running on `localhost:8080`, you can test it with:
+Once the app is running on `localhost:8080`, test the endpoint using:
 
 ```bash
 curl -X POST "http://localhost:8080/search" \
@@ -136,5 +155,6 @@ curl -X POST "http://localhost:8080/search" \
 
 ## ✨ Credits
 
-Embeddings via [Sentence Transformers](https://www.sbert.net/)  
-Data from [freeCodeCamp YouTube Channel](https://www.youtube.com/c/Freecodecamp)
+- Embeddings via [Sentence Transformers](https://www.sbert.net/)
+- Video content from [freeCodeCamp YouTube Channel](https://www.youtube.com/c/Freecodecamp)
+```
