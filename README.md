@@ -19,8 +19,6 @@ Semantic search system to explore freeCodeCamp YouTube content using vector simi
 
 ![System Architecture](https://github.com/AzzedineNed/End-to-End-Semantic-Search-for-FreeCodeCamp-videos/blob/main/end-to-end-semantic-search-for-freecodecamp-videos.png)
 
-> Replace with the actual path or URL to your architecture diagram.
-
 ---
 
 ## 🧪 Semantic Search Logic
