@@ -1,7 +1,3 @@
----
-
-```markdown
----
 # 🎯 End-to-End Semantic Search for freeCodeCamp Videos
 
 Semantic search system to explore freeCodeCamp YouTube content using vector similarity and sentence embeddings. Built for educational search via natural language queries.
