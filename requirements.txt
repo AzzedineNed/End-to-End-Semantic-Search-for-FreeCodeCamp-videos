@@ -5,5 +5,5 @@ transformers==4.28.0
 huggingface_hub==0.13.0
 scikit-learn
 numpy==1.26.4
-uvicorn
+uvicorn 
 
