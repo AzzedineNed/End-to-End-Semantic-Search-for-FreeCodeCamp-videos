@@ -9,9 +9,9 @@ Semantic search system to explore freeCodeCamp YouTube content using vector simi
 
 - 🔍 **Semantic Search** over freeCodeCamp videos using sentence-transformers.
 - ⚙️ **ETL Pipeline** for fetching, processing, and embedding YouTube video data.
-- 🚀 **FastAPI Backend** with a clean Dockerized setup.
-- 🌐 **Gradio UI** hosted on Hugging Face Spaces.
-- ☁️ **CI/CD** using GitHub Actions & Google Cloud Build.
+- 🚀 **FastAPI Backend**, containerized with Docker and deployed on **Google Cloud Run**.
+- 🌐 **Gradio UI** hosted on **Hugging Face Spaces**, secured with Identity Token.
+- ☁️ **CI/CD** using GitHub Actions & **Google Cloud Build** for auto-deployments.
 
 ---
 
@@ -139,5 +139,3 @@ curl -X POST "http://localhost:8080/search" \
 Embeddings via [Sentence Transformers](https://www.sbert.net/)  
 Data from [freeCodeCamp YouTube Channel](https://www.youtube.com/c/Freecodecamp)
 ```
-
----
