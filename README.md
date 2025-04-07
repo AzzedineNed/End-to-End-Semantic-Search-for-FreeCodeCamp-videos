@@ -153,4 +153,3 @@ curl -X POST "http://localhost:8080/search" \
 
 - Embeddings via [Sentence Transformers](https://www.sbert.net/)
 - Video content from [freeCodeCamp YouTube Channel](https://www.youtube.com/c/Freecodecamp)
-```
