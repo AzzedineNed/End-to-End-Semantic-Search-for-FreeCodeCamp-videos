@@ -74,10 +74,10 @@ Automated via GitHub Actions:
 
 To securely run the data pipeline via GitHub Actions, set the following repository secrets:
 
-| Secret Name       | Description                                           |
-|-------------------|-------------------------------------------------------|
-| `YOUTUBE_API_KEY` | YouTube Data API v3 key from your Google Console     |
-| `GH_PAT`          | GitHub Personal Access Token (for workflow commits)  |
+| Secret Name            | Description                                          |
+|------------------------|------------------------------------------------------|
+| `YT_API_KEY`           | YouTube Data API v3 key from your Google Console     |
+| `PERSONAL_ACCESS_TOKEN`| GitHub Personal Access Token (for workflow commits)  |
 
 - 🔒 Secrets keep credentials out of source code.
 - ✅ Ensures smooth, authenticated pipeline execution.
