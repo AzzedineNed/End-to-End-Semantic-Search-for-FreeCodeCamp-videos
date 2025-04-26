@@ -3,3 +3,4 @@ polars==0.20.21
 sentence-transformers==2.6.1
 scikit-learn==1.2.2
 numpy==1.26.4
+huggingface_hub[hf_xet]
